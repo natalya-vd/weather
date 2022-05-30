@@ -1,0 +1,32 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "description": "CLI for getting weather",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "weather"
+  ],
+  "author": "Natalya Vdovydchenko",
+  "license": "ISC",
+  "homepage": "https://github.com/natalya-vd",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natalya-vd"
+  },
+  "bugs": {
+    "url": "https://github.com/natalya-vd",
+    "email": "en-ig-ma007@yandex.ru"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
