@@ -20,8 +20,23 @@ const printHelp = () => {
   );
 }
 
+const printForcast = (data, icon) => {
+  console.log(
+    dedent`${chalk.bgBlueBright(` Погода в городе ${data.name} `)}
+    ${icon}  ${chalk.greenBright(data.weather[0].description)}
+    Температура ${chalk.greenBright(data.main.temp)}
+    Ощущается как ${chalk.greenBright(data.main.feels_like)}
+    Влажность ${chalk.greenBright(data.main.humidity)} %
+    Атмосферное давление ${chalk.greenBright(data.main.pressure)} гПа
+    Скорость ветра ${chalk.greenBright(data.wind.speed)} м/сек
+    Облачность ${chalk.greenBright(data.clouds.all)} %
+    `
+  );
+}
+
 export {
   printError,
   printSuccess,
-  printHelp
+  printHelp,
+  printForcast
 };
